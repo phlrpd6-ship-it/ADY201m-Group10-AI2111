@@ -1,0 +1,11 @@
+RQ1 ANSWER:
+PROGRESS TESTS-30 had the strongest observed association with unsuccessful outcome (r=-0.8239, |r|=0.8239, n=165). Because TARGET=1 means unsuccessful, a negative correlation means higher scores are associated with lower risk. This is association, not causality.
+
+RQ2 ANSWER:
+Random Forest was selected using VALIDATION F2=0.8487. All five models were compared on validation only; the test set was evaluated for the selected model alone. On the untouched test set at threshold 0.50 it achieved Precision=0.8459, Recall=0.8474, F1=0.8467, F2=0.8471, ROC-AUC=0.9476, PR-AUC=0.9239.
+
+RQ3 ANSWER - SMOTE:
+Using Random Forest, baseline F2=0.8524 and SMOTE F2=0.8518 (delta=-0.0006). Recall changed from 0.8683 to 0.8682 (delta=-0.0002). Thresholds were optimized using validation only and SMOTE was applied only to the training set.
+
+RQ3 ANSWER - SHAP:
+SHAP successfully produced global feature importance and student/record-specific explanations. Positive SHAP values push predictions toward TARGET=1 (unsuccessful), while negative SHAP values push predictions toward TARGET=0 (successful) (as explained for the recorded explained_class). SHAP explains the selected model trained on SMOTE-resampled training data, using interventional feature perturbation with a 100-row background drawn from the original (pre-SMOTE) imputed training data. SHAP explains model behavior and does not prove causal root causes.

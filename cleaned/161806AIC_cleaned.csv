@@ -1,0 +1,202 @@
+﻿Mã học kỳ,Mã lớp,NO.,CODE,PROGRESS TESTS-20,ASSIGNMENTS-20,PRACTICAL EXAM-30,FINAL EXAM-30,TOTAL,STATUS,STATUS_CLEAN,TARGET,SOURCE_FILE,ROW_IDX_ORIG,HAS_PREFINAL,HAS_PREFINAL_EXCL_PE,NO_ASSESSMENT_DATA,FLAG_120102BAA,FLAG_SUSPICIOUS_TOTAL,FLAG_NO_SCORE_ERA
+SP2025,SP2025-class 1,1,1905BJCEAI,9.0,9.5,10.0,7.6,9.0,Passed,Passed,0,161806AIC_TongHop.xlsx,0,True,True,False,False,False,False
+SP2025,SP2025-class 1,2,1905BJCBAB,7.5,8.1,2.0,5.2,5.3,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,1,True,True,False,False,False,False
+SP2025,SP2025-class 1,3,1905BJAEGJ,4.0,8.8,5.0,6.0,5.9,Passed,Passed,0,161806AIC_TongHop.xlsx,2,True,True,False,False,False,False
+SP2025,SP2025-class 1,4,1905BJCBBF,7.7,9.1,3.0,0.0,4.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,3,True,True,False,False,False,False
+SP2025,SP2025-class 1,5,1905BJCBAH,3.8,4.1,10.0,9.2,7.3,Passed,Passed,0,161806AIC_TongHop.xlsx,4,True,True,False,False,False,False
+SP2025,SP2025-class 1,6,1905BJJEDH,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,5,True,True,False,False,False,False
+SP2025,SP2025-class 1,7,1905BJJIEH,8.8,9.2,10.0,7.2,8.8,Passed,Passed,0,161806AIC_TongHop.xlsx,6,True,True,False,False,False,False
+SP2025,SP2025-class 1,8,1905BJJEDJ,4.2,8.3,2.0,5.6,4.8,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,7,True,True,False,False,False,False
+SP2025,SP2025-class 1,9,1905BJJEFB,9.1,9.5,10.0,7.6,9.0,Passed,Passed,0,161806AIC_TongHop.xlsx,8,True,True,False,False,False,False
+SP2025,SP2025-class 1,10,1905BJCHGD,8.5,9.6,7.0,5.2,7.3,Passed,Passed,0,161806AIC_TongHop.xlsx,9,True,True,False,False,False,False
+SP2025,SP2025-class 1,11,1905BJAFBD,8.9,9.8,10.0,7.2,8.9,Passed,Passed,0,161806AIC_TongHop.xlsx,10,True,True,False,False,False,False
+SP2025,SP2025-class 1,12,1905BJCBCI,3.8,5.6,0.0,4.4,3.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,11,True,True,False,False,False,False
+SP2025,SP2025-class 1,13,1905BJAABA,9.0,9.3,10.0,7.4,8.9,Passed,Passed,0,161806AIC_TongHop.xlsx,12,True,True,False,False,False,False
+SP2025,SP2025-class 1,14,1905BJJICG,4.3,8.9,8.0,8.4,7.6,Passed,Passed,0,161806AIC_TongHop.xlsx,13,True,True,False,False,False,False
+SP2025,SP2025-class 1,15,1905BJAGFI,9.0,7.9,4.5,6.2,6.6,Passed,Passed,0,161806AIC_TongHop.xlsx,14,True,True,False,False,False,False
+SP2025,SP2025-class 1,16,1905BJCEAA,8.3,9.2,10.0,5.6,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,15,True,True,False,False,False,False
+SP2025,SP2025-class 1,17,1905BJCGJH,7.2,8.7,3.5,5.6,5.9,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,16,True,True,False,False,False,False
+SP2025,SP2025-class 1,18,1905BJCAGJ,7.5,7.5,0.0,5.4,4.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,17,True,True,False,False,False,False
+SP2025,SP2025-class 1,19,1905BJCBFA,3.8,5.3,0.0,0.0,1.8,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,18,True,True,False,False,False,False
+SP2025,SP2025-class 1,20,1905BJADFI,8.8,9.6,10.0,4.4,8.0,Passed,Passed,0,161806AIC_TongHop.xlsx,19,True,True,False,False,False,False
+SP2025,SP2025-class 1,21,1905BJCHJI,4.2,6.3,2.5,4.0,4.0,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,20,True,True,False,False,False,False
+SP2025,SP2025-class 1,22,1905BJAHHF,8.4,8.2,10.0,6.0,8.1,Passed,Passed,0,161806AIC_TongHop.xlsx,21,True,True,False,False,False,False
+SP2025,SP2025-class 1,23,1905BJCHGF,7.2,5.7,6.0,4.0,5.6,Passed,Passed,0,161806AIC_TongHop.xlsx,22,True,True,False,False,False,False
+SP2025,SP2025-class 1,24,1905BJCBJF,9.1,9.4,7.0,6.6,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,23,True,True,False,False,False,False
+SP2025,SP2025-class 1,25,1905BJCIJG,2.8,7.3,0.0,6.4,3.9,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,24,True,True,False,False,False,False
+SP2025,SP2025-class 1,26,1905BJCGDG,9.0,8.7,7.0,5.6,7.3,Passed,Passed,0,161806AIC_TongHop.xlsx,25,True,True,False,False,False,False
+SP2025,SP2025-class 1,27,1905BJAADB,4.5,6.8,2.0,0.0,2.9,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,26,True,True,False,False,False,False
+SP2025,SP2025-class 1,28,1905BJJFBH,0.0,0.3,0.0,0.0,0.1,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,27,True,True,False,False,False,False
+SP2025,SP2025-class 1,29,1905BJCEBB,3.7,5.0,0.0,0.0,1.7,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,28,True,True,False,False,False,False
+SP2025,SP2025-class 1,30,1905BJCGIH,8.8,8.2,10.0,8.8,9.0,Passed,Passed,0,161806AIC_TongHop.xlsx,29,True,True,False,False,False,False
+SP2025,SP2025-class 1,31,1905BJCGDD,8.0,6.2,4.0,6.4,6.0,Passed,Passed,0,161806AIC_TongHop.xlsx,30,True,True,False,False,False,False
+SP2025,SP2025-class 1,32,1905BJCBAI,4.2,9.5,8.0,5.8,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,31,True,True,False,False,False,False
+SP2025,SP2025-class 1,33,1905BJCBDJ,9.0,9.1,10.0,6.0,8.4,Passed,Passed,0,161806AIC_TongHop.xlsx,32,True,True,False,False,False,False
+SP2025,SP2025-class 1,34,1905BJCJBB,8.4,9.5,6.0,5.0,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,33,True,True,False,False,False,False
+SP2025,SP2025-class 1,35,1905BJJJJI,4.3,6.4,4.0,7.0,5.4,Passed,Passed,0,161806AIC_TongHop.xlsx,34,True,True,False,False,False,False
+SP2025,SP2025-class 1,36,1905BJCEFJ,8.5,8.4,6.0,4.6,6.6,Passed,Passed,0,161806AIC_TongHop.xlsx,35,True,True,False,False,False,False
+SP2025,SP2025-class 1,37,1905BJAGAB,9.0,10.0,5.0,8.6,7.9,Passed,Passed,0,161806AIC_TongHop.xlsx,36,True,True,False,False,False,False
+SP2025,SP2025-class 2,1,1905BJEJHA,6.4,8.6,10.0,0.0,6.0,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,37,True,True,False,False,False,False
+SP2025,SP2025-class 2,2,1905BJDDEJ,7.9,9.3,2.0,6.8,6.1,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,38,True,True,False,False,False,False
+SP2025,SP2025-class 2,3,1905BJDIHD,7.3,9.8,8.0,5.6,7.5,Passed,Passed,0,161806AIC_TongHop.xlsx,39,True,True,False,False,False,False
+SP2025,SP2025-class 2,4,1905BJDDEE,7.6,9.8,7.0,5.4,7.2,Passed,Passed,0,161806AIC_TongHop.xlsx,40,True,True,False,False,False,False
+SP2025,SP2025-class 2,5,1905BJEJGJ,3.5,9.3,9.0,5.0,6.8,Passed,Passed,0,161806AIC_TongHop.xlsx,41,True,True,False,False,False,False
+SP2025,SP2025-class 2,6,1905BJDBJF,8.6,9.6,5.0,6.4,7.1,Passed,Passed,0,161806AIC_TongHop.xlsx,42,True,True,False,False,False,False
+SP2025,SP2025-class 2,7,1905BJEJFF,6.7,9.8,3.0,3.8,5.3,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,43,True,True,False,False,False,False
+SP2025,SP2025-class 2,8,1905BJDCAE,7.8,8.6,6.0,7.0,7.2,Passed,Passed,0,161806AIC_TongHop.xlsx,44,True,True,False,False,False,False
+SP2025,SP2025-class 2,9,1905BJDBDA,4.3,9.3,2.0,4.2,4.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,45,True,True,False,False,False,False
+SP2025,SP2025-class 2,10,1905BJDGBH,5.4,8.8,0.0,4.8,4.3,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,46,True,True,False,False,False,False
+SP2025,SP2025-class 2,11,1905BJDAJJ,7.7,8.3,7.0,5.4,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,47,True,True,False,False,False,False
+SP2025,SP2025-class 2,12,1905BJCIBB,7.3,9.7,0.0,0.0,3.4,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,48,True,True,False,False,False,False
+SP2025,SP2025-class 2,13,1905BJECDH,8.6,10.0,9.5,4.2,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,49,True,True,False,False,False,False
+SP2025,SP2025-class 2,14,1905BJDHEI,8.1,9.5,0.0,0.0,3.5,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,50,True,True,False,False,False,False
+SP2025,SP2025-class 2,15,1905BJDIFE,8.9,9.7,10.0,6.4,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,51,True,True,False,False,False,False
+SP2025,SP2025-class 2,16,1905BJDEGH,7.1,9.8,9.5,6.6,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,52,True,True,False,False,False,False
+SP2025,SP2025-class 2,17,1905BJDHAE,6.2,9.3,9.0,5.8,7.5,Passed,Passed,0,161806AIC_TongHop.xlsx,53,True,True,False,False,False,False
+SP2025,SP2025-class 2,18,1905BJDEHF,8.2,9.3,8.5,5.8,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,54,True,True,False,False,False,False
+SP2025,SP2025-class 2,19,1905BJDACB,7.8,8.9,8.0,6.4,7.7,Passed,Passed,0,161806AIC_TongHop.xlsx,55,True,True,False,False,False,False
+SP2025,SP2025-class 2,20,1905BJEJCG,6.7,9.5,6.0,6.2,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,56,True,True,False,False,False,False
+SP2025,SP2025-class 2,21,1905BJDBCB,8.3,9.3,10.0,5.8,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,57,True,True,False,False,False,False
+SP2025,SP2025-class 2,22,1905BJDHHG,6.4,8.9,3.0,0.0,4.0,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,58,True,True,False,False,False,False
+SP2025,SP2025-class 2,23,1905BJDJCA,6.1,9.7,2.0,7.0,5.8,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,59,True,True,False,False,False,False
+SP2025,SP2025-class 2,24,1905BJDFBE,6.8,9.2,4.0,5.8,6.1,Passed,Passed,0,161806AIC_TongHop.xlsx,60,True,True,False,False,False,False
+SP2025,SP2025-class 2,25,1905BJDHGJ,8.6,9.8,10.0,6.6,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,61,True,True,False,False,False,False
+SP2025,SP2025-class 2,26,1905BJDCDJ,6.9,9.3,6.5,4.8,6.6,Passed,Passed,0,161806AIC_TongHop.xlsx,62,True,True,False,False,False,False
+SP2025,SP2025-class 2,27,1905BJDJIH,7.4,9.8,4.0,4.0,5.9,Passed,Passed,0,161806AIC_TongHop.xlsx,63,True,True,False,False,False,False
+SP2025,SP2025-class 2,28,1905BJDCJJ,7.3,9.6,8.0,5.8,7.5,Passed,Passed,0,161806AIC_TongHop.xlsx,64,True,True,False,False,False,False
+SP2025,SP2025-class 2,29,1905BJDEDJ,6.8,9.8,10.0,6.6,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,65,True,True,False,False,False,False
+SP2025,SP2025-class 2,30,1905BJDAEF,7.4,9.1,10.0,5.2,7.9,Passed,Passed,0,161806AIC_TongHop.xlsx,66,True,True,False,False,False,False
+SP2025,SP2025-class 2,31,1905BJEJIA,6.7,9.6,10.0,5.6,7.9,Passed,Passed,0,161806AIC_TongHop.xlsx,67,True,True,False,False,False,False
+SP2025,SP2025-class 2,32,1905BJDEAA,4.3,8.2,0.0,5.6,4.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,68,True,True,False,False,False,False
+SP2025,SP2025-class 2,33,1905BJDAFG,8.4,9.7,10.0,7.0,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,69,True,True,False,False,False,False
+SP2025,SP2025-class 2,34,1905BJAFCG,8.3,7.8,5.5,5.0,6.4,Passed,Passed,0,161806AIC_TongHop.xlsx,70,True,True,False,False,False,False
+SP2025,SP2025-class 2,35,1905BJDFJF,7.9,9.7,5.0,5.6,6.7,Passed,Passed,0,161806AIC_TongHop.xlsx,71,True,True,False,False,False,False
+SP2025,SP2025-class 3,1,1905AIDDFG,7.0,7.8,8.0,5.8,7.1,Passed,Passed,0,161806AIC_TongHop.xlsx,72,True,True,False,False,False,False
+SP2025,SP2025-class 3,2,1905AIJEGJ,7.0,5.3,3.0,0.0,3.4,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,73,True,True,False,False,False,False
+SP2025,SP2025-class 3,3,1905AIJAFI,0.0,4.8,1.5,0.0,1.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,74,True,True,False,False,False,False
+SP2025,SP2025-class 3,4,1905AIBFJH,7.5,8.7,5.0,5.6,6.4,Passed,Passed,0,161806AIC_TongHop.xlsx,75,True,True,False,False,False,False
+SP2025,SP2025-class 3,5,1905AIJGDE,7.0,8.8,10.0,7.4,8.4,Passed,Passed,0,161806AIC_TongHop.xlsx,76,True,True,False,False,False,False
+SP2025,SP2025-class 3,6,1905AICADC,8.0,9.3,7.0,5.6,7.2,Passed,Passed,0,161806AIC_TongHop.xlsx,77,True,True,False,False,False,False
+SP2025,SP2025-class 3,7,1905AIDHFJ,0.0,7.7,0.0,0.0,1.5,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,78,True,True,False,False,False,False
+SP2025,SP2025-class 3,8,1905AICBEG,7.0,8.0,4.5,5.2,5.9,Passed,Passed,0,161806AIC_TongHop.xlsx,79,True,True,False,False,False,False
+SP2025,SP2025-class 3,9,1905BJAACB,9.5,9.5,8.0,5.6,7.9,Passed,Passed,0,161806AIC_TongHop.xlsx,80,True,True,False,False,False,False
+SP2025,SP2025-class 3,10,1905AHCDIJ,5.0,2.8,3.5,0.0,2.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,81,True,True,False,False,False,False
+SP2025,SP2025-class 3,11,1905AHBHAG,0.0,4.0,0.0,0.0,0.8,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,82,True,True,False,False,False,False
+SP2025,SP2025-class 3,12,1905AIDEJF,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,83,True,True,False,False,False,False
+SP2025,SP2025-class 3,13,1919AIJCJG,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,84,True,True,False,False,False,False
+SP2025,SP2025-class 3,14,1905AHBGJH,7.5,8.5,10.0,5.4,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,85,True,True,False,False,False,False
+SP2025,SP2025-class 3,15,1905AIJIJG,8.5,9.3,5.0,8.6,7.6,Passed,Passed,0,161806AIC_TongHop.xlsx,86,True,True,False,False,False,False
+SP2025,SP2025-class 3,16,1905AIFGBJ,8.0,7.9,4.0,5.6,6.1,Passed,Passed,0,161806AIC_TongHop.xlsx,87,True,True,False,False,False,False
+SP2025,SP2025-class 3,17,1905AIBBJD,7.5,9.0,10.0,6.8,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,88,True,True,False,False,False,False
+SP2025,SP2025-class 3,18,1905AICIEA,5.0,6.8,3.0,5.2,4.8,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,89,True,True,False,False,False,False
+SP2025,SP2025-class 3,19,1905BJDCBE,7.5,8.2,10.0,4.8,7.6,Passed,Passed,0,161806AIC_TongHop.xlsx,90,True,True,False,False,False,False
+SP2025,SP2025-class 3,20,1905AIAJIC,7.0,8.7,5.0,5.0,6.1,Passed,Passed,0,161806AIC_TongHop.xlsx,91,True,True,False,False,False,False
+SP2025,SP2025-class 3,21,1905AIDIAC,5.0,6.2,0.0,0.0,2.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,92,True,True,False,False,False,False
+SP2025,SP2025-class 3,22,1919AIJEFF,8.0,7.8,6.0,4.4,6.3,Passed,Passed,0,161806AIC_TongHop.xlsx,93,True,True,False,False,False,False
+SP2025,SP2025-class 3,23,1905AICBHB,7.0,9.0,5.0,6.0,6.5,Passed,Passed,0,161806AIC_TongHop.xlsx,94,True,True,False,False,False,False
+SP2025,SP2025-class 3,24,1905AICJHJ,5.0,8.8,1.0,0.0,3.1,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,95,True,True,False,False,False,False
+SP2025,SP2025-class 3,25,1905AHBAFB,8.0,9.2,10.0,6.6,8.4,Passed,Passed,0,161806AIC_TongHop.xlsx,96,True,True,False,False,False,False
+SP2025,SP2025-class 3,26,1905AIFDFG,5.0,6.3,0.0,0.0,2.3,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,97,True,True,False,False,False,False
+SU2025,SU2025-class 1,1,1905BJDDAE,4.5,8.1,0.0,0.0,2.5,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,98,True,True,False,False,False,False
+SU2025,SU2025-class 1,2,1905BJJGJG,4.0,4.6,0.0,0.0,1.7,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,99,True,True,False,False,False,False
+SU2025,SU2025-class 1,3,1905BJEACD,8.9,8.4,10.0,7.4,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,100,True,True,False,False,False,False
+SU2025,SU2025-class 1,4,1905AIJEGJ,8.2,9.8,6.0,7.4,7.6,Passed,Passed,0,161806AIC_TongHop.xlsx,101,True,True,False,False,False,False
+SU2025,SU2025-class 1,5,1905BJDDDE,8.7,9.5,10.0,7.6,8.9,Passed,Passed,0,161806AIC_TongHop.xlsx,102,True,True,False,False,False,False
+SU2025,SU2025-class 1,6,1905BJEABA,9.0,8.0,7.0,6.6,7.5,Passed,Passed,0,161806AIC_TongHop.xlsx,103,True,True,False,False,False,False
+SU2025,SU2025-class 1,7,1905BJEAHJ,8.5,9.8,8.0,7.0,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,104,True,True,False,False,False,False
+SU2025,SU2025-class 1,8,1905AICEHI,3.0,7.1,0.0,0.0,2.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,105,True,True,False,False,False,False
+SU2025,SU2025-class 1,9,1919BJDGGI,8.4,9.5,5.0,7.2,7.2,Passed,Passed,0,161806AIC_TongHop.xlsx,106,True,True,False,False,False,False
+SU2025,SU2025-class 1,10,1905BJGJJC,8.2,9.0,10.0,6.2,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,107,True,True,False,False,False,False
+SU2025,SU2025-class 1,11,1905BJDFHH,8.3,9.3,10.0,8.2,9.0,Passed,Passed,0,161806AIC_TongHop.xlsx,108,True,True,False,False,False,False
+SU2025,SU2025-class 1,12,1905BJEBJD,7.7,9.0,0.0,5.8,5.1,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,109,True,True,False,False,False,False
+SU2025,SU2025-class 1,13,1905BJEBII,3.7,6.0,2.0,0.0,2.5,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,110,True,True,False,False,False,False
+SU2025,SU2025-class 1,14,1905BJDCHI,4.5,9.2,2.0,0.0,3.3,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,111,True,True,False,False,False,False
+SU2025,SU2025-class 1,15,1905BJEJIF,4.5,9.4,0.0,0.0,2.8,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,112,True,True,False,False,False,False
+SU2025,SU2025-class 1,16,1905BJCAEE,9.2,9.9,7.0,8.8,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,113,True,True,False,False,False,False
+SU2025,SU2025-class 1,17,1905BJDEIG,2.4,7.2,0.0,0.0,1.9,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,114,True,True,False,False,False,False
+SU2025,SU2025-class 1,18,1905BJDFFD,4.7,7.1,0.0,0.0,2.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,115,True,True,False,False,False,False
+SU2025,SU2025-class 1,19,1905BJEBFG,8.4,9.7,9.0,7.8,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,116,True,True,False,False,False,False
+SU2025,SU2025-class 1,20,1905AICIEA,8.2,9.3,5.0,6.8,7.0,Passed,Passed,0,161806AIC_TongHop.xlsx,117,True,True,False,False,False,False
+SU2025,SU2025-class 1,21,1905BJEBFA,8.7,7.7,7.0,6.2,7.2,Passed,Passed,0,161806AIC_TongHop.xlsx,118,True,True,False,False,False,False
+SU2025,SU2025-class 1,22,1905BJEAGD,9.2,7.8,5.0,5.6,6.6,Passed,Passed,0,161806AIC_TongHop.xlsx,119,True,True,False,False,False,False
+SU2025,SU2025-class 1,23,1919AIFFCE,8.0,8.8,9.0,7.2,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,120,True,True,False,False,False,False
+SU2025,SU2025-class 1,24,1905BJDDAG,8.4,9.8,4.0,6.2,6.7,Passed,Passed,0,161806AIC_TongHop.xlsx,121,True,True,False,False,False,False
+SU2025,SU2025-class 1,25,1905BJDHAC,8.7,9.5,10.0,8.6,9.2,Passed,Passed,0,161806AIC_TongHop.xlsx,122,True,True,False,False,False,False
+SU2025,SU2025-class 1,26,1905BJEJFH,9.0,8.8,4.0,5.4,6.4,Passed,Passed,0,161806AIC_TongHop.xlsx,123,True,True,False,False,False,False
+SU2025,SU2025-class 1,27,1905BJDHHF,7.7,8.7,2.0,0.0,3.9,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,124,True,True,False,False,False,False
+SU2025,SU2025-class 1,28,1905BJDEAA,7.8,4.8,6.0,5.6,6.0,Passed,Passed,0,161806AIC_TongHop.xlsx,125,True,True,False,False,False,False
+SU2025,SU2025-class 1,29,1905BJEBCE,8.0,9.9,2.0,0.0,4.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,126,True,True,False,False,False,False
+SU2025,SU2025-class 1,30,1905AICJHJ,4.4,9.6,2.0,0.0,3.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,127,True,True,False,False,False,False
+SU2025,SU2025-class 1,31,1905BJDEFI,3.9,6.4,0.0,0.0,2.1,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,128,True,True,False,False,False,False
+SU2025,SU2025-class 1,32,1905BJEJAI,8.5,10.0,10.0,8.0,9.1,Passed,Passed,0,161806AIC_TongHop.xlsx,129,True,True,False,False,False,False
+SU2025,SU2025-class 1,33,1905BJEJBD,8.2,7.9,10.0,8.4,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,130,True,True,False,False,False,False
+SU2025,SU2025-class 1,34,1905BJDIGG,3.2,8.7,0.0,0.0,2.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,131,True,True,False,False,False,False
+SU2025,SU2025-class 2,1,1905BJEAHH,7.6,9.8,10.0,8.4,9.0,Passed,Passed,0,161806AIC_TongHop.xlsx,132,True,True,False,False,False,False
+SU2025,SU2025-class 2,2,1905BJCHFD,5.9,7.2,5.0,6.4,6.0,Passed,Passed,0,161806AIC_TongHop.xlsx,133,True,True,False,False,False,False
+SU2025,SU2025-class 2,3,1905BJDCFD,8.2,9.8,2.0,6.6,6.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,134,True,True,False,False,False,False
+SU2025,SU2025-class 2,4,1905BJCBAJ,6.1,8.4,8.0,5.0,6.8,Passed,Passed,0,161806AIC_TongHop.xlsx,135,True,True,False,False,False,False
+SU2025,SU2025-class 2,5,1905BJCBAB,6.2,9.2,2.0,6.0,5.5,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,136,True,True,False,False,False,False
+SU2025,SU2025-class 2,6,1905BJCBCH,9.2,10.0,9.0,7.8,8.9,Passed,Passed,0,161806AIC_TongHop.xlsx,137,True,True,False,False,False,False
+SU2025,SU2025-class 2,7,1905BJCBBF,8.6,9.5,10.0,8.2,9.1,Passed,Passed,0,161806AIC_TongHop.xlsx,138,True,True,False,False,False,False
+SU2025,SU2025-class 2,8,1905BJCIHE,8.3,9.3,6.0,7.0,7.4,Passed,Passed,0,161806AIC_TongHop.xlsx,139,True,True,False,False,False,False
+SU2025,SU2025-class 2,9,1905BJCCDG,6.7,9.5,7.0,8.0,7.7,Passed,Passed,0,161806AIC_TongHop.xlsx,140,True,True,False,False,False,False
+SU2025,SU2025-class 2,10,1905BJDCEB,6.7,9.9,8.0,7.6,8.0,Passed,Passed,0,161806AIC_TongHop.xlsx,141,True,True,False,False,False,False
+SU2025,SU2025-class 2,11,1905BJDADA,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,142,True,True,False,False,False,False
+SU2025,SU2025-class 2,12,1905AHBHAG,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,143,True,True,False,False,False,False
+SU2025,SU2025-class 2,13,1905BJCGJH,7.0,9.8,9.0,7.4,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,144,True,True,False,False,False,False
+SU2025,SU2025-class 2,14,1905BJCBIJ,9.0,9.5,10.0,9.0,9.4,Passed,Passed,0,161806AIC_TongHop.xlsx,145,True,True,False,False,False,False
+SU2025,SU2025-class 2,15,1905BJDBJG,8.3,9.5,10.0,8.6,9.1,Passed,Passed,0,161806AIC_TongHop.xlsx,146,True,True,False,False,False,False
+SU2025,SU2025-class 2,16,1905BJCEBI,8.6,9.3,5.0,6.0,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,147,True,True,False,False,False,False
+SU2025,SU2025-class 2,17,1905BJDJAD,6.2,9.8,5.0,7.4,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,148,True,True,False,False,False,False
+SU2025,SU2025-class 2,18,1905BJCHJI,7.4,9.9,7.0,7.4,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,149,True,True,False,False,False,False
+SU2025,SU2025-class 2,19,1905BJCJGJ,9.1,9.8,5.0,8.4,7.8,Passed,Passed,0,161806AIC_TongHop.xlsx,150,True,True,False,False,False,False
+SU2025,SU2025-class 2,20,1905BJCACD,7.5,10.0,5.0,6.8,7.0,Passed,Passed,0,161806AIC_TongHop.xlsx,151,True,True,False,False,False,False
+SU2025,SU2025-class 2,21,1905BJCHEC,7.7,8.2,5.0,7.0,6.8,Passed,Passed,0,161806AIC_TongHop.xlsx,152,True,True,False,False,False,False
+SU2025,SU2025-class 2,22,1905AIBGEA,7.7,9.8,10.0,7.0,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,153,True,True,False,False,False,False
+SU2025,SU2025-class 2,23,1905BJCHBJ,8.1,8.0,2.0,4.4,5.1,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,154,True,True,False,False,False,False
+SU2025,SU2025-class 2,24,1905BJCCGC,7.0,9.8,10.0,6.6,8.3,Passed,Passed,0,161806AIC_TongHop.xlsx,155,True,True,False,False,False,False
+SU2025,SU2025-class 2,25,1905BJCGDJ,8.0,9.2,10.0,7.8,8.8,Passed,Passed,0,161806AIC_TongHop.xlsx,156,True,True,False,False,False,False
+SU2025,SU2025-class 2,26,1905AICDHB,6.1,7.2,1.0,0.0,3.0,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,157,True,True,False,False,False,False
+SU2025,SU2025-class 2,27,1905BJCGFC,7.1,9.8,1.0,0.0,3.7,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,158,True,True,False,False,False,False
+SU2025,SU2025-class 2,28,1905BJCCDJ,6.7,6.3,0.0,0.0,2.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,159,True,True,False,False,False,False
+SU2025,SU2025-class 2,29,1905BJDCHC,5.7,9.5,2.0,0.0,3.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,160,True,True,False,False,False,False
+SU2025,SU2025-class 2,30,1905BJCDCG,7.7,9.7,8.0,7.0,8.0,Passed,Passed,0,161806AIC_TongHop.xlsx,161,True,True,False,False,False,False
+SU2025,SU2025-class 2,31,1905BJDAHF,7.9,9.8,2.0,6.2,6.0,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,162,True,True,False,False,False,False
+SU2025,SU2025-class 2,32,1905BJDCHF,6.8,10.0,7.0,4.8,6.9,Passed,Passed,0,161806AIC_TongHop.xlsx,163,True,True,False,False,False,False
+SU2025,SU2025-class 2,33,1905BJCCCI,6.0,4.6,2.0,0.0,2.7,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,164,True,True,False,False,False,False
+SU2025,SU2025-class 2,34,1905BJCJBF,5.6,5.3,0.0,0.0,2.2,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,165,True,True,False,False,False,False
+SU2025,SU2025-class 2,35,1905BJDBIJ,9.4,9.1,10.0,8.4,9.2,Passed,Passed,0,161806AIC_TongHop.xlsx,166,True,True,False,False,False,False
+SU2025,SU2025-class 3,1,1905BJAGGE,7.9,8.3,10.0,7.8,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,167,True,True,False,False,False,False
+SU2025,SU2025-class 3,2,1905BJAFAC,8.6,8.8,10.0,7.6,8.8,Passed,Passed,0,161806AIC_TongHop.xlsx,168,True,True,False,False,False,False
+SU2025,SU2025-class 3,3,1905BJBJJI,5.6,5.9,4.0,5.6,5.2,Passed,Passed,0,161806AIC_TongHop.xlsx,169,True,True,False,False,False,False
+SU2025,SU2025-class 3,4,1905BJADEC,0.0,1.5,0.0,0.0,0.3,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,170,True,True,False,False,False,False
+SU2025,SU2025-class 3,5,1905BJADAE,8.3,7.4,5.0,7.2,6.8,Passed,Passed,0,161806AIC_TongHop.xlsx,171,True,True,False,False,False,False
+SU2025,SU2025-class 3,6,1905BJJEDJ,8.5,9.8,10.0,6.4,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,172,True,True,False,False,False,False
+SU2025,SU2025-class 3,7,1905BJDBDA,5.7,9.0,5.0,5.2,6.0,Passed,Passed,0,161806AIC_TongHop.xlsx,173,True,True,False,False,False,False
+SU2025,SU2025-class 3,8,1905AICAJD,0.0,2.1,0.0,0.0,0.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,174,True,True,False,False,False,False
+SU2025,SU2025-class 3,9,1905BJJJBJ,8.2,9.5,8.0,7.6,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,175,True,True,False,False,False,False
+SU2025,SU2025-class 3,10,1905AIDEJF,6.8,7.7,4.0,6.8,6.1,Passed,Passed,0,161806AIC_TongHop.xlsx,176,True,True,False,False,False,False
+SU2025,SU2025-class 3,11,1905BJJDID,9.2,9.8,10.0,9.2,9.5,Passed,Passed,0,161806AIC_TongHop.xlsx,177,True,True,False,False,False,False
+SU2025,SU2025-class 3,12,1905BJDHEI,0.0,0.0,0.0,0.0,0.0,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,178,True,True,False,False,False,False
+SU2025,SU2025-class 3,13,1905BJAGFA,8.6,7.0,10.0,8.2,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,179,True,True,False,False,False,False
+SU2025,SU2025-class 3,14,1905BJAFAA,8.9,9.7,10.0,9.2,9.5,Passed,Passed,0,161806AIC_TongHop.xlsx,180,True,True,False,False,False,False
+SU2025,SU2025-class 3,15,1905BJADAB,6.7,6.7,2.0,6.0,5.1,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,181,True,True,False,False,False,False
+SU2025,SU2025-class 3,16,1905BJJEIG,6.3,7.6,5.0,7.0,6.4,Passed,Passed,0,161806AIC_TongHop.xlsx,182,True,True,False,False,False,False
+SU2025,SU2025-class 3,17,1905BJAJIE,0.0,3.7,0.0,0.0,0.7,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,183,True,True,False,False,False,False
+SU2025,SU2025-class 3,18,1905BJAJDC,9.3,9.0,7.0,8.8,8.4,Passed,Passed,0,161806AIC_TongHop.xlsx,184,True,True,False,False,False,False
+SU2025,SU2025-class 3,19,1905BJAEGC,5.5,7.3,4.0,7.4,6.0,Passed,Passed,0,161806AIC_TongHop.xlsx,185,True,True,False,False,False,False
+SU2025,SU2025-class 3,20,1905BJJEEH,7.2,7.0,2.0,7.2,5.6,Not Passed,Not Passed,1,161806AIC_TongHop.xlsx,186,True,True,False,False,False,False
+SU2025,SU2025-class 3,21,1905BJJDEA,7.6,9.0,10.0,8.2,8.8,Passed,Passed,0,161806AIC_TongHop.xlsx,187,True,True,False,False,False,False
+SU2025,SU2025-class 3,22,1905BJJGGH,8.3,9.0,7.0,8.8,8.2,Passed,Passed,0,161806AIC_TongHop.xlsx,188,True,True,False,False,False,False
+SU2025,SU2025-class 3,23,1905BJDBGC,5.8,8.3,4.0,6.2,5.9,Passed,Passed,0,161806AIC_TongHop.xlsx,189,True,True,False,False,False,False
+SU2025,SU2025-class 3,24,1905BJCEBB,7.1,7.7,10.0,9.2,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,190,True,True,False,False,False,False
+SU2025,SU2025-class 3,25,1905BJJIHH,6.9,6.5,10.0,7.6,8.0,Passed,Passed,0,161806AIC_TongHop.xlsx,191,True,True,False,False,False,False
+SU2025,SU2025-class 3,26,1905BJADHC,8.9,8.0,10.0,7.6,8.7,Passed,Passed,0,161806AIC_TongHop.xlsx,192,True,True,False,False,False,False
+SU2025,SU2025-class 3,27,1905BJAFFD,6.0,8.9,10.0,6.8,8.0,Passed,Passed,0,161806AIC_TongHop.xlsx,193,True,True,False,False,False,False
+SU2025,SU2025-class 3,28,1905BJJEGA,5.7,9.4,8.0,6.4,7.3,Passed,Passed,0,161806AIC_TongHop.xlsx,194,True,True,False,False,False,False
+SU2025,SU2025-class 3,29,1905BJAGII,6.5,6.8,10.0,6.8,7.7,Passed,Passed,0,161806AIC_TongHop.xlsx,195,True,True,False,False,False,False
+SU2025,SU2025-class 3,30,1905BJAEEA,0.0,1.9,0.0,0.0,0.4,Attendance Fail,Attendance Fail,1,161806AIC_TongHop.xlsx,196,True,True,False,False,False,False
+SU2025,SU2025-class 3,31,1905BJAFCJ,7.8,9.5,9.0,8.0,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,197,True,True,False,False,False,False
+SU2025,SU2025-class 3,32,1905BJAGJJ,9.4,7.8,9.0,8.8,8.8,Passed,Passed,0,161806AIC_TongHop.xlsx,198,True,True,False,False,False,False
+SU2025,SU2025-class 3,33,1905BJBJAD,6.6,9.8,10.0,7.8,8.6,Passed,Passed,0,161806AIC_TongHop.xlsx,199,True,True,False,False,False,False
+SU2025,SU2025-class 3,34,1905BJAGCC,6.4,7.0,6.0,6.8,6.5,Passed,Passed,0,161806AIC_TongHop.xlsx,200,True,True,False,False,False,False

@@ -1,0 +1,40 @@
+﻿column,role,type
+LABS-10,ML_PREDICTOR,pre-final assessment score
+ASSIGNMENTS-10,ML_PREDICTOR,pre-final assessment score
+PROGRESS TESTS-30,ML_PREDICTOR,pre-final assessment score
+ASSIGNMENTS-30,ML_PREDICTOR,pre-final assessment score
+EXERCISES-30,ML_PREDICTOR,pre-final assessment score
+QUIZ-20,ML_PREDICTOR,pre-final assessment score
+ASSIGNMENTS-20,ML_PREDICTOR,pre-final assessment score
+PRACTICAL EXAM-30,ML_PREDICTOR,pre-final assessment score
+PROGRESS TESTS-20,ML_PREDICTOR,pre-final assessment score
+PROGRESS TESTS-10,ML_PREDICTOR,pre-final assessment score
+QUIZ-10,ML_PREDICTOR,pre-final assessment score
+LABS-15,ML_PREDICTOR,pre-final assessment score
+PRACTICAL EXAM-25,ML_PREDICTOR,pre-final assessment score
+PRESENTATION-20,ML_PREDICTOR,pre-final assessment score
+ACTIVE LEARNING-10,ML_PREDICTOR,pre-final assessment score
+PROJECT-30,ML_PREDICTOR,pre-final assessment score
+EXERCISES-10,ML_PREDICTOR,pre-final assessment score
+LABS-20,ML_PREDICTOR,pre-final assessment score
+PRACTICAL EXAM-40,ML_PREDICTOR,pre-final assessment score
+WORKSHOP-10,ML_PREDICTOR,pre-final assessment score
+PRACTICAL EXAM-20,ML_PREDICTOR,pre-final assessment score
+TARGET,TARGET,"binary outcome (0=Passed, 1=Not Passed/Attendance Fail)"
+FINAL EXAM-40,REFERENCE,excluded from ML (leakage/post-outcome)
+TOTAL,REFERENCE,excluded from ML (leakage/post-outcome)
+FINAL EXAM-30,REFERENCE,excluded from ML (leakage/post-outcome)
+CODE,METADATA,anonymized student ID (traceability only)
+FLAG_120102BAA,METADATA,diagnostic flag
+FLAG_NO_SCORE_ERA,METADATA,diagnostic flag
+FLAG_SUSPICIOUS_TOTAL,METADATA,diagnostic flag
+HAS_PREFINAL,METADATA,diagnostic flag
+HAS_PREFINAL_EXCL_PE,METADATA,diagnostic flag
+Mã học kỳ,METADATA,administrative identifier
+Mã lớp,METADATA,administrative identifier
+NO.,METADATA,administrative identifier
+NO_ASSESSMENT_DATA,METADATA,diagnostic flag
+ROW_IDX_ORIG,METADATA,traceability index
+SOURCE_FILE,METADATA,course/file identity (stratification only)
+STATUS,METADATA,target-derived (excluded)
+STATUS_CLEAN,METADATA,target-derived (excluded)

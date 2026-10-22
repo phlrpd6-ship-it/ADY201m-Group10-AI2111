@@ -1,0 +1,38 @@
+{
+  "method": "Stratified random split",
+  "random_state": 42,
+  "train": {
+    "split": "TRAIN",
+    "n": 66422,
+    "target_0_n": 49083,
+    "target_0_pct": 0.7389569720875614,
+    "target_1_n": 17339,
+    "target_1_pct": 0.26104302791243866,
+    "unique_codes": 14383,
+    "rows_with_code": 66422
+  },
+  "validation": {
+    "split": "VALIDATION",
+    "n": 22141,
+    "target_0_n": 16361,
+    "target_0_pct": 0.7389458470710447,
+    "target_1_n": 5780,
+    "target_1_pct": 0.26105415292895534,
+    "unique_codes": 11116,
+    "rows_with_code": 22141
+  },
+  "test": {
+    "split": "TEST",
+    "n": 22141,
+    "target_0_n": 16361,
+    "target_0_pct": 0.7389458470710447,
+    "target_1_n": 5780,
+    "target_1_pct": 0.26105415292895534,
+    "unique_codes": 11129,
+    "rows_with_code": 22141
+  },
+  "group_audit": {
+    "group_column": null,
+    "group_overlap_check": "not_applicable"
+  }
+}

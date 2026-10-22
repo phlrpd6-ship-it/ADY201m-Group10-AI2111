@@ -1,0 +1,14 @@
+{
+  "explainer": "shap.TreeExplainer",
+  "feature_perturbation": "interventional",
+  "model_variant": "SMOTE-trained (train only)",
+  "background": "SHAP default interventional background",
+  "explained_class": 1,
+  "check_additivity": false,
+  "additivity_checked": false,
+  "additivity_passed": null,
+  "additivity_note": "check_additivity=False is retained from the original pipeline; additivity was not measured, so it is not claimed as verified.",
+  "local_explanations": "observed assessment features only (pre-imputation non-null)",
+  "shap_success": true,
+  "sample_n": 500
+}

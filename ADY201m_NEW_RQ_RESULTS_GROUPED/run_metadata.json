@@ -1,0 +1,159 @@
+{
+  "script": "ADY201m_NEW_RQ_PIPELINE_GROUPED v1.0.0 (2026-10-15)",
+  "script_filename": "ADY201m_NEW_RQ_PIPELINE_GROUPED.py",
+  "timestamp": "2026-10-18T13:17:24",
+  "python_version": "3.14.5",
+  "package_versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "shap": "0.54.1",
+    "matplotlib": "3.11.2"
+  },
+  "input_dataset_path": "C:\\PHAMHOANGLONG\\HOC\\ADY\\file tong hop\\file tong hop\\ADY\\ADY201m\\data\\cleaned\\ADY201m_combined_cleaned.csv",
+  "input_row_count": 124791,
+  "modeling_row_count": 110704,
+  "target_distribution_all": {
+    "0": 92179,
+    "1": 32612
+  },
+  "target_distribution_modeling": {
+    "0": 81805,
+    "1": 28899
+  },
+  "features": [
+    "LABS-10",
+    "ASSIGNMENTS-10",
+    "PROGRESS TESTS-30",
+    "ASSIGNMENTS-30",
+    "EXERCISES-30",
+    "QUIZ-20",
+    "ASSIGNMENTS-20",
+    "PRACTICAL EXAM-30",
+    "PROGRESS TESTS-20",
+    "PROGRESS TESTS-10",
+    "QUIZ-10",
+    "LABS-15",
+    "PRACTICAL EXAM-25",
+    "PRESENTATION-20",
+    "ACTIVE LEARNING-10",
+    "PROJECT-30",
+    "EXERCISES-10",
+    "LABS-20",
+    "PRACTICAL EXAM-40",
+    "WORKSHOP-10",
+    "PRACTICAL EXAM-20"
+  ],
+  "feature_count": 21,
+  "forbidden_features": [
+    "FINAL EXAM",
+    "FINAL EXAM-30",
+    "FINAL EXAM-40",
+    "TOTAL",
+    "STATUS",
+    "STATUS_CLEAN",
+    "TARGET"
+  ],
+  "grouping_definition": "SOURCE_FILE + '___' + CODE",
+  "split_strategy": "GroupShuffleSplit by (SOURCE_FILE, CODE)",
+  "random_state": 42,
+  "use_group_split": true,
+  "split_sizes": {
+    "train": 66491,
+    "validation": 22236,
+    "test": 21977
+  },
+  "split_group_counts": {
+    "train": 54079,
+    "validation": 18027,
+    "test": 18027
+  },
+  "split_group_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "split_target1_pct": {
+    "train": 26.07570949451806,
+    "validation": 26.398632847634467,
+    "test": 25.895254129317014
+  },
+  "model_parameters": {
+    "Decision Tree": "DecisionTreeClassifier(class_weight='balanced', random_state=42)",
+    "Random Forest": "RandomForestClassifier(class_weight='balanced', n_estimators=300, n_jobs=-1,\n                       random_state=42)",
+    "XGBoost": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=0.8, device=None, early_stopping_rounds=None,\n              enable_categorical=True, eval_metric='logloss',\n              feature_types=None, feature_weights=None, gamma=None,\n              grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=0.05, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=6, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=300, n_jobs=-1,\n              num_parallel_tree=None, ...)",
+    "LightGBM": "LGBMClassifier(learning_rate=0.05, n_estimators=300, random_state=42,\n               verbosity=-1)",
+    "CatBoost": "CatBoostClassifier(depth=6, iterations=300, learning_rate=0.05, random_seed=42, verbose=False)"
+  },
+  "selected_model": "Random Forest",
+  "selected_model_validation_f2": 0.8540478130942679,
+  "selected_model_test_metrics_at_0.50": {
+    "threshold": 0.5,
+    "accuracy": 0.9188242253264777,
+    "precision": 0.8460584588131089,
+    "recall": 0.8392198207696363,
+    "f1": 0.8426252646436133,
+    "f2": 0.8405786898518075,
+    "roc_auc": 0.9436935818631007,
+    "pr_auc": 0.9176715331759805,
+    "tn": 15417,
+    "fp": 869,
+    "fn": 915,
+    "tp": 4776
+  },
+  "baseline_threshold": 0.35000000000000003,
+  "smote_threshold": 0.34,
+  "rq3_baseline_test_metrics": {
+    "threshold": 0.35000000000000003,
+    "accuracy": 0.8900668881102971,
+    "precision": 0.7480684744735646,
+    "recall": 0.86768581971534,
+    "f1": 0.8034493979824276,
+    "f2": 0.8407968670185595,
+    "roc_auc": 0.9436936088365813,
+    "pr_auc": 0.9176715191416529,
+    "tn": 14623,
+    "fp": 1663,
+    "fn": 753,
+    "tp": 4938
+  },
+  "rq3_smote_test_metrics": {
+    "threshold": 0.34,
+    "accuracy": 0.9055831096145971,
+    "precision": 0.7949429037520391,
+    "recall": 0.8562642769284836,
+    "f1": 0.8244649352846629,
+    "f2": 0.8432546549456634,
+    "roc_auc": 0.9423146759493419,
+    "pr_auc": 0.91810884982869,
+    "tn": 15029,
+    "fp": 1257,
+    "fn": 818,
+    "tp": 4873
+  },
+  "smote_configuration": {
+    "class": "imblearn.over_sampling.SMOTE",
+    "random_state": 42,
+    "fitted_on": "X_train_imp, y_train (train only)"
+  },
+  "shap_configuration": {
+    "explainer": "shap.TreeExplainer",
+    "feature_perturbation": "interventional",
+    "model_variant": "SMOTE-trained (train only)",
+    "background": "SHAP default interventional background",
+    "explained_class": 1,
+    "check_additivity": false,
+    "additivity_checked": false,
+    "additivity_passed": null,
+    "additivity_note": "check_additivity=False is retained from the original pipeline; additivity was not measured, so it is not claimed as verified.",
+    "local_explanations": "observed assessment features only (pre-imputation non-null)",
+    "shap_success": true,
+    "sample_n": 500
+  },
+  "shap_success": true,
+  "split_artifact": "split_indices.csv (index, split, group_key)"
+}

@@ -1,0 +1,18 @@
+ADY201m NEW RQ PIPELINE SUMMARY (GROUPED)
+============================================================
+Script: ADY201m_NEW_RQ_PIPELINE_GROUPED v1.0.0 (2026-10-15)
+Input dataset: C:\PHAMHOANGLONG\HOC\ADY\file tong hop\file tong hop\ADY\ADY201m\data\cleaned\ADY201m_combined_cleaned.csv
+Rows all: 124,791
+Rows modeling: 110,704
+Grouping: SOURCE_FILE + '___' + CODE
+Split strategy: GroupShuffleSplit by (SOURCE_FILE, CODE)
+
+RQ1: Among assessment families replicated across at least 5 source files, PRACTICAL EXAM had the largest median absolute within-file correlation (0.7193) across 10 files. Association does not imply causation.
+RQ2: Random Forest was selected by validation F2=0.8540. Test F2=0.8406, recall=0.8392, precision=0.8461 (test evaluated once, selected model only).
+RQ3: Baseline F2=0.8408; SMOTE F2=0.8433; delta=+0.0025. Recall delta=-0.0114.
+SHAP: completed; local files show observed features only.
+SHAP additivity: checked=False (check_additivity=False retained; additivity not measured).
+
+Caution: CODE is meaningful only within SOURCE_FILE; grouping uses (SOURCE_FILE, CODE).
+Caution: Missing assessments are often structural and should not be treated as zero.
+Caution: SHAP values explain model predictions, not causal root causes.

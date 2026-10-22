@@ -1,0 +1,18 @@
+{
+  "best_model": "Random Forest",
+  "baseline_label": "Random Forest - Baseline",
+  "smote_label": "Random Forest - SMOTE",
+  "threshold_selection": "Validation set only",
+  "test_evaluation": "Held-out test set",
+  "smote_application": "Training set only",
+  "baseline_threshold": 0.4000000000000001,
+  "smote_threshold": 0.33,
+  "threshold_selection_method": "max F2 on validation (tie-break: recall, then precision), grid 0.05-0.95 step 0.01",
+  "threshold_selection_data": "validation_set_only",
+  "threshold_selection_model_variant": "baseline (train, no SMOTE)",
+  "smote_threshold_selection_model_variant": "SMOTE-trained (train only, random_state=42)",
+  "test_evaluation_data": "held_out_test_set",
+  "test_evaluation_role": "final evaluation only; never used for selection",
+  "smote_fitted_on": "X_train_imp, y_train (train only)",
+  "smote_random_state": 42
+}
