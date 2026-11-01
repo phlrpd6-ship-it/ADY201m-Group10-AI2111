@@ -1,0 +1,11 @@
+﻿Mã học kỳ,Mã lớp,NO.,CODE,PROGRESS TESTS-10,LABS-10,ASSIGNMENTS-10,PRACTICAL EXAM-30,FINAL EXAM-30,TOTAL,STATUS,STATUS_CLEAN,TARGET,SOURCE_FILE,ROW_IDX_ORIG,HAS_PREFINAL,HAS_PREFINAL_EXCL_PE,NO_ASSESSMENT_DATA,FLAG_120102BAA,FLAG_SUSPICIOUS_TOTAL,FLAG_NO_SCORE_ERA
+SU2025,SU2025-class 1,1,1905BJDCBG,9.0,9.8,8,4,7.8,7.1,Passed,Passed,0,160316BIA_TongHop.xlsx,0,True,True,False,False,False,False
+SU2025,SU2025-class 1,2,1905BJJIAF,4.2,5.4,7,2,0.0,2.8,Not Passed,Not Passed,1,160316BIA_TongHop.xlsx,1,True,True,False,False,False,False
+SU2025,SU2025-class 1,3,1905BJCJGI,8.5,6.8,7,3,5.0,5.4,Passed,Passed,0,160316BIA_TongHop.xlsx,2,True,True,False,False,False,False
+SU2025,SU2025-class 1,4,1905BJDAGI,9.2,10.0,7,2,0.0,4.0,Not Passed,Not Passed,1,160316BIA_TongHop.xlsx,3,True,True,False,False,False,False
+SU2025,SU2025-class 1,5,1905BJCGGJ,4.9,6.6,10,5,8.0,6.8,Passed,Passed,0,160316BIA_TongHop.xlsx,4,True,True,False,False,False,False
+SU2025,SU2025-class 1,6,1905BJDIHJ,8.9,10.0,10,9,7.4,8.7,Passed,Passed,0,160316BIA_TongHop.xlsx,5,True,True,False,False,False,False
+SU2025,SU2025-class 1,7,1905BJCDDG,8.8,10.0,8,9,8.0,8.6,Passed,Passed,0,160316BIA_TongHop.xlsx,6,True,True,False,False,False,False
+SU2025,SU2025-class 1,8,1905BJAGBB,8.2,9.8,8,2,6.8,6.0,Passed,Passed,0,160316BIA_TongHop.xlsx,7,True,True,False,False,False,False
+SU2025,SU2025-class 1,9,1905BJCJFD,8.7,10.0,10,9,7.8,8.8,Passed,Passed,0,160316BIA_TongHop.xlsx,8,True,True,False,False,False,False
+SU2025,SU2025-class 1,10,1905BJECBJ,8.2,2.0,7,5,8.2,6.4,Passed,Passed,0,160316BIA_TongHop.xlsx,9,True,True,False,False,False,False

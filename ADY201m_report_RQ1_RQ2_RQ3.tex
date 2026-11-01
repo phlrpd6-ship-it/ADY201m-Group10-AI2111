@@ -1,0 +1,174 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\title{Early Prediction of Course Outcomes from Pre-Final Assessments: Association, Model Selection, and SMOTE}
+\author{\IEEEauthorblockN{Ph\d{a}m Ho\`ang Long\quad L\^e Nguy\'{\^e}n Khang\quad V\~o V\'{\u a}n Ti\'{e}n}
+\IEEEauthorblockA{SE211868\quad SE212168\quad SE180541\\
+ADY201m -- Applied Data Science}}
+\begin{document}
+\maketitle
+\begin{abstract}
+This study investigates early prediction of unsuccessful course outcomes through assessment association, model selection, and imbalance handling. Across 18 source datasets, 124,791 cleaned records and 110,704 modeling-eligible records with 21 predictors are reported. The strongest pooled association is found for PROGRESS TESTS-30 ($r=-0.8239$), although this result is supported by only 165 observed scores. Among five configured classifiers, Random Forest achieves the highest production validation F2 at a 0.50 threshold (0.8487); its held-out test F2 at that threshold is 0.8471. Validation-selected threshold tuning raises baseline test recall from 0.8474 to 0.8683 and F2 from 0.8471 to 0.8524, with reduced precision. Adding SMOTE produces a negligible F2 change relative to the tuned baseline ($\Delta F_2=-0.00060$). The results support recall-oriented model selection, but not a material benefit from SMOTE. Single-split evaluation, train--test overlap, and unverified assessment timing limit generalization.
+\end{abstract}
+\begin{IEEEkeywords}
+early warning system, pre-final assessment, point-biserial correlation, Random Forest, F2-score, SMOTE, threshold tuning
+\end{IEEEkeywords}
+
+\section{Introduction and Scope}
+Scores collected before a final examination may support earlier identification of learners at risk. The outcome combines Not Passed and Attendance Fail; intervention effectiveness is not evaluated.
+
+Three questions guide the production experiment: pooled feature association (RQ1), selection among five classifiers using validation F2 (RQ2), and the effects of training-only SMOTE with validation-selected thresholds (RQ3).
+
+\subsection{Research Questions}
+\begin{enumerate}
+\item \textbf{RQ1:} Which pre-final assessment components are most strongly associated with an unsuccessful outcome?
+\item \textbf{RQ2:} Which of five algorithms (Decision Tree, Random Forest, XGBoost, LightGBM, and CatBoost) performs best for the early-warning task?
+\item \textbf{RQ3:} Does SMOTE, together with F2-based threshold tuning, improve the recall-oriented performance of the selected model?
+\end{enumerate}
+
+\section{Data and Provenance}
+\subsection{Population and Target}
+The data comprise 18 source datasets with 125,384 input records. After cleaning, 124,791 records and 39 columns are retained. The specific exclusion categories for the 593 removed records could not be independently audited.
+
+The cleaned population contains 92,179 Passed, 22,527 Not Passed, and 10,085 Attendance Fail records. The binary target is
+\[
+Y=\begin{cases}0,&\text{Passed},\\1,&\text{Not Passed or Attendance Fail}.\end{cases}
+\]
+Class 1 denotes unsuccessful outcomes (32,612 records, 26.13\% of cleaned data). The modeling subset has 110,704 records: 81,805 class-0 and 28,899 class-1 (26.10\% positive).
+
+\subsection{Assessment Features and Availability}
+The model uses 21 assessment components. Final-examination scores and total scores are excluded by design. Pre-final timing for certain practical exams and projects is assumed by the pipeline; no course calendar is available to independently verify the date when each score became known. Missing values and structurally absent assessment components must not be interpreted as observed zero scores.
+
+Diagnostics identify 14,087 no-assessment records, 14,073 no-score-era records, and 388 suspicious-total records. These flags can overlap and must not be summed as disjoint exclusions.
+
+\section{Methodology}
+\subsection{Preprocessing and Production Split}
+The reported production evaluation uses a stratified random split into 60\% training, 20\% validation, and 20\% test partitions with random seed 42. Median imputation is fitted using the training partition only. SMOTE is applied to the training partition only, after splitting; neither validation nor test observations are oversampled.
+
+\begin{table}[t]
+\centering\small
+\caption{Production partition sizes and reported grouping overlap.}
+\label{tab:split}
+\begin{tabular}{lr}
+\toprule
+Quantity & Production split\\
+\midrule
+Training rows & 66,422\\
+Validation rows & 22,141\\
+Test rows & 22,141\\
+Test rows sharing source-dataset/CODE key & 4,888\\
+Test rows sharing raw CODE & 21,662\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Training and test share the source-dataset/CODE key for 4,888 test rows (22.08\%) and raw CODE for 21,662 rows (97.84\%). CODE uniqueness across sources is unverified. This overlap limits claims of independent generalization and may inflate performance estimates.
+
+\subsection{Models and Selection Rule}
+Five tree-based classifier configurations are compared. Decision Tree uses balanced class weights; Random Forest uses 300 estimators, balanced class weights, and parallel execution. XGBoost uses 300 estimators, maximum depth 6, learning rate 0.05, and column subsampling of 0.8. LightGBM uses 300 estimators and learning rate 0.05; CatBoost uses 300 iterations, depth 6, and learning rate 0.05. The reported random seed is 42. Positive-class weighting is not reported for the three boosted models. Consequently, the experiment compares these configured pipelines and is not a fully equalized algorithm benchmark.
+
+For RQ2, models are ranked primarily by validation F2 at a common decision threshold of 0.50; recall and precision provide secondary criteria. For RQ3, validation scores determine separate F2-optimized thresholds for the selected Random Forest baseline and SMOTE variant. The test partition is reserved for final evaluation.
+
+\subsection{Metrics and Association Measure}
+Let $P$ denote positive-class precision and $R$ denote positive-class recall. The F2 measure is
+\begin{align}
+P&=\frac{TP}{TP+FP}, & R&=\frac{TP}{TP+FN},\\
+F_2&=\frac{5PR}{4P+R}.
+\end{align}
+F2 emphasizes recall more than precision without optimizing recall alone. ROC-AUC and the reported PR-AUC provide supplementary discrimination measures; the exact PR-AUC implementation is not specified in the available summary.
+
+For RQ1, point-biserial correlation is calculated as Pearson correlation between an observed assessment score and the binary outcome. Negative values indicate that higher scores tend to co-occur with fewer unsuccessful outcomes. They do not imply causal effects.
+
+\section{Results for RQ1--RQ3}
+\subsection{RQ1: Pooled assessment associations}
+Table~\ref{tab:assoc} reproduces selected reported correlations. It is not the full 21-feature table. PROGRESS TESTS-30 has the largest observed absolute correlation, but only 165 observed rows. PRACTICAL EXAM-40 and PRACTICAL EXAM-30 combine strong associations with much larger observed samples.
+
+\begin{table}[t]
+\centering\small
+\caption{Selected pooled assessment associations.}
+\label{tab:assoc}
+\begin{tabular}{lrr}
+\toprule Component & Observed $n$ & $r$\\\midrule
+PROGRESS TESTS-30&165&$-0.8239$\\
+PRACTICAL EXAM-25&2,776&$-0.7689$\\
+PRACTICAL EXAM-40&14,071&$-0.7331$\\
+PROJECT-30&5,804&$-0.7196$\\
+PRACTICAL EXAM-20&12,058&$-0.6992$\\
+ASSIGNMENTS-30&19,350&$-0.6929$\\
+PRACTICAL EXAM-30&43,132&$-0.6700$\\
+WORKSHOP-10&12,352&$-0.5329$\\\bottomrule
+\end{tabular}
+\end{table}
+
+For PROGRESS TESTS-30, the reported mean score gap between successful and unsuccessful records is approximately 5.13 points. The displayed score-band counts sum to 150 rather than 165 because a minimum-$n$ filter suppresses one band. The below-5.0 band has 22 records and 86.36\% unsuccessful outcomes. For PRACTICAL EXAM-40, the corresponding below-5.0 band has 6,078 records and 66.62\% unsuccessful outcomes. These conditional percentages use different observed populations and should not be read as directly comparable causal risk effects.
+
+\textbf{Answer to RQ1.} PROGRESS TESTS-30 is the strongest observed pooled correlate, with a substantial small-sample caveat. Practical-exam components provide more extensively supported pooled signals. These correlations are not causal evidence.
+
+\subsection{RQ2: Production five-model comparison}
+The production experiment compares five configured tree-based classifiers. Random Forest is selected under validation F2 (Table~\ref{tab:prodmodels}). LightGBM leads ROC-AUC and PR-AUC, so the chosen model is not universally superior across metrics. The candidate algorithms represent established tree-based and boosting approaches~\cite{breiman,xgb,lgb,cat}.
+
+\begin{table}[t]
+\caption{RQ2: production validation results at threshold 0.50.}
+\label{tab:prodmodels}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}
+\toprule Model&F2&ROC-AUC&PR-AUC\\\midrule
+Random Forest&\textbf{0.8487}&0.9488&0.9245\\
+LightGBM&0.8383&\textbf{0.9604}&\textbf{0.9392}\\
+XGBoost&0.8362&0.9597&0.9387\\
+CatBoost&0.8326&0.9584&0.9374\\
+Decision Tree&0.8275&0.8934&0.7845\\\bottomrule
+\end{tabular}
+\end{table}
+
+At threshold 0.50, the production Random Forest test precision is 0.8459, recall 0.8474, F1 0.8467, F2 0.8471, ROC-AUC 0.9476 and PR-AUC 0.9239. Its confusion matrix is TN=15,469, FP=892, FN=882 and TP=4,898. Only the selected model has reported test results. Train--test grouping overlap qualifies these test metrics.
+
+\textbf{Answer to RQ2.} Random Forest achieves the highest validation F2 among the implemented configurations and is therefore selected under the study's recall-oriented selection criterion. LightGBM and XGBoost achieve higher ROC-AUC and PR-AUC, indicating that model ranking depends on the evaluation metric.
+
+\subsection{RQ3: Production SMOTE and threshold tuning}
+SMOTE~\cite{smote} is applied only to training data. The baseline and SMOTE variants receive their own validation-selected thresholds; test data are reserved for final evaluation (Table~\ref{tab:prodsmote}).
+
+\begin{table}[t]
+\caption{RQ3: production outcomes at validation-selected thresholds.}
+\label{tab:prodsmote}
+\centering\small
+\begin{tabular}{lrr}
+\toprule Metric&Baseline&SMOTE\\\midrule
+Threshold&0.40&0.33\\
+F2&0.8524&0.8518\\
+Precision&0.7940&0.7920\\
+Recall&0.8683&0.8682\\
+ROC-AUC&0.9476&0.9450\\
+PR-AUC&0.9239&0.9232\\\bottomrule
+\end{tabular}
+\end{table}
+
+SMOTE minus baseline changes are $\Delta F_2=-0.00060$, $\Delta P=-0.00204$, $\Delta R=-0.00017$ and $\Delta\text{ROC-AUC}=-0.00259$. These descriptive differences do not indicate a substantial improvement or deterioration. Relative to the production model at threshold 0.50, the tuned baseline increases test recall from 0.8474 to 0.8683 while reducing precision from 0.8459 to 0.7940; F2 rises from 0.8471 to 0.8524. This cross-table contrast describes the threshold-related tradeoff, distinct from the incremental SMOTE comparison.
+
+\textbf{Answer to RQ3.} Validation-based threshold selection increases recall at the expense of precision relative to the 0.50 operating point, whereas adding SMOTE produces a negligible change in $F_2$ ($\Delta F_2=-0.00060$). The production experiment therefore provides no evidence of a material benefit from SMOTE for the selected model.
+
+\section{Discussion}
+RQ1 identifies strong negative pooled associations between selected pre-final scores and unsuccessful outcomes. PROGRESS TESTS-30 has the largest observed absolute correlation, but its support is limited to 165 records; therefore, the result should not be interpreted as a universally dominant early-warning signal. Several Practical Exam components have substantial observed sample sizes alongside strong negative associations. Correlation does not show that changing a score would prevent failure.
+
+RQ2 selects Random Forest because it leads validation F2 among the five implemented classifiers. LightGBM and XGBoost show stronger discrimination on ROC-AUC and PR-AUC, illustrating that the conclusion depends on the selection metric. In RQ3, selecting the decision threshold on validation data improves recall for the baseline model relative to the default 0.50 threshold, but precision falls. Applying SMOTE produces essentially no additional F2 benefit once both variants have their own validation-selected thresholds.
+
+\section{Limitations and Threats to Validity}
+A single seeded production split is reported without cross-validation or uncertainty intervals. Train--test overlap (Table~\ref{tab:split}) restricts generalization. Class weighting differs between algorithms, and no exhaustive hyperparameter search is reported. Small F2 differences are not evidence of statistical significance.
+
+Assessment availability dates are not verified against course schedules. The combined academic/attendance endpoint has potentially distinct causes. Neither causal effects, intervention effectiveness, nor prospective performance is established.
+
+\section{Conclusion}
+This three-question report finds that PROGRESS TESTS-30 has the strongest observed pooled correlation with unsuccessful outcomes ($r=-0.8239$) but is supported by a small sample ($n=165$). Under the production validation F2 criterion, Random Forest is selected from five configured models, yielding test F2 of 0.8471 at threshold 0.50. F2-oriented threshold selection improves the baseline test F2 to 0.8524 and recall to 0.8683, while reducing precision; training-only SMOTE changes F2 by only $-0.00060$ relative to that tuned baseline. Leakage-controlled and prospective evaluations are needed before stronger generalization claims.
+
+\begin{thebibliography}{9}
+\bibitem{breiman} L. Breiman, ``Random forests,'' \emph{Machine Learning}, vol. 45, no. 1, pp. 5--32, 2001.
+\bibitem{smote} N. V. Chawla, K. W. Bowyer, L. O. Hall, and W. P. Kegelmeyer, ``SMOTE: Synthetic minority over-sampling technique,'' \emph{Journal of Artificial Intelligence Research}, vol. 16, pp. 321--357, 2002.
+\bibitem{xgb} T. Chen and C. Guestrin, ``XGBoost: A scalable tree boosting system,'' in \emph{Proc. 22nd ACM SIGKDD Int. Conf. Knowledge Discovery and Data Mining}, 2016, pp. 785--794.
+\bibitem{lgb} G. Ke \emph{et al.}, ``LightGBM: A highly efficient gradient boosting decision tree,'' in \emph{Advances in Neural Information Processing Systems}, vol. 30, 2017.
+\bibitem{cat} L. Prokhorenkova, G. Gusev, A. Vorobev, A. V. Dorogush, and A. Gulin, ``CatBoost: Unbiased boosting with categorical features,'' in \emph{Advances in Neural Information Processing Systems}, vol. 31, 2018.
+\end{thebibliography}
+\end{document}

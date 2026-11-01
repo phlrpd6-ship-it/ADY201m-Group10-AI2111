@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "ADY201m_NEW_RQ_RESULTS_GROUPED",
+			"path": "ADY201m_NEW_RQ_RESULTS_GROUPED"
+		},
+		{
+			"name": "cleaned",
+			"path": "cleaned"
+		},
+		{
+			"name": "modeling_eligible",
+			"path": "modeling_eligible"
+		},
+		{
+			"name": "partially_cleaned",
+			"path": "partially_cleaned"
+		},
+		{
+			"name": "raw",
+			"path": "raw"
+		},
+		{
+			"name": "python_results_cleaned",
+			"path": "python_results_cleaned"
+		},
+		{
+			"name": "ADY201m-Group10-AI2111",
+			"path": "../../../../../../Users/phlrp/OneDrive/Documents/GitHub/ADY201m-Group10-AI2111"
+		}
+	],
+	"settings": {}
+}
