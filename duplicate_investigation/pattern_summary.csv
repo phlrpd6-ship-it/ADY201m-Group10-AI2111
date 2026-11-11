@@ -1,0 +1,5 @@
+﻿pattern,n_combinations,n_rows,excess_rows
+Conflicting assessment records,951,1902,951
+Conflicting assessment records and outcome labels,3513,7027,3514
+Conflicting outcome labels,162,324,162
+Different class labels; scores/outcomes otherwise identical,186,372,186

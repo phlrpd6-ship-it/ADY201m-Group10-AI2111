@@ -1,0 +1,13 @@
+ADY201m - KET QUA PIPELINE CHI RQ1, RQ2, RQ3
+==========================================================
+Version: ADY201m_PIPELINE_CHI_RQ1_RQ2_RQ3 v1.1 (no imputation; goc: GROUPED v1.0.0)
+Mode: FULL ORIGINAL PARAMETERS
+Data: ADY201m_combined_cleaned.csv | total_rows=124791 | modeling_rows=110704
+Split: GroupShuffleSplit by (SOURCE_FILE, CODE) | overlap={'train_validation': 0, 'train_test': 0, 'validation_test': 0}
+RQ1: PRACTICAL EXAM highest median |Pearson r|=0.7193 in 10 sources (>=5 sources).
+RQ2: Best model=Random Forest; validation F2=0.8566; selected model test F2@0.50=0.8409.
+RQ3: Baseline+tuning F2=0.8403, SMOTE+tuning F2=0.8433, delta=+0.0030.
+RQ3: Recall baseline=0.8593, SMOTE=0.8563, delta=-0.0030.
+Notes: Associations do not imply causation. Thresholds optimized using validation only.
+Notes: No imputation except inside the SMOTE scenarios (SMOTE cannot handle NaN).
+Notes: Class 1=unsuccessful. Scores from quick-check mode are NOT for the final report.

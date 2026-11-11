@@ -1,0 +1,29 @@
+{
+  "combined_rows": 124791,
+  "combined_columns": 39,
+  "raw_xlsx_count": 18,
+  "course_cleaned_csv_count": 18,
+  "repeated_combinations": 4812,
+  "rows_in_repeated_combinations": 9625,
+  "excess_rows": 4813,
+  "frequency_distribution": {
+    "2": 4811,
+    "3": 1
+  },
+  "pattern_counts": {
+    "Conflicting assessment records": 951,
+    "Conflicting assessment records and outcome labels": 3513,
+    "Conflicting outcome labels": 162,
+    "Different class labels; scores/outcomes otherwise identical": 186
+  },
+  "index_source_status_counts": {
+    "ROW_INDEX_MATCH_VALUES_DIFFER": 8870,
+    "ROW_INDEX_AND_VALUES_MATCH": 755
+  },
+  "key_source_status_counts": {
+    "UNIQUE_RAW_MATCH_ALL_VALUES_EQUAL": 8631,
+    "AMBIGUOUS_FALLBACK_MATCH": 994
+  },
+  "raw_row_index_checks": 9625,
+  "raw_key_match_checks": 9625
+}

@@ -1,0 +1,108 @@
+{
+  "script": "ADY201m_PIPELINE_CHI_RQ1_RQ2_RQ3 v1.1 (no imputation; goc: GROUPED v1.0.0)",
+  "mode": "full",
+  "timestamp": "2026-11-11T16:27:49",
+  "python_version": "3.14.5",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "matplotlib": "3.11.2"
+  },
+  "input_path": "C:\\PHAMHOANGLONG\\HOC\\ADY\\file tong hop\\file tong hop\\COMPILED_PIPELINE_TRAINING_CLEANING\\ADY201m_PIPELINE_CHI_RQ1_RQ2_RQ3\\DU_LIEU\\ADY201m_combined_cleaned.csv",
+  "rows_total": 124791,
+  "rows_model": 110704,
+  "target_definition": {
+    "0": "successful",
+    "1": "unsuccessful"
+  },
+  "predictors": [
+    "LABS-10",
+    "ASSIGNMENTS-10",
+    "PROGRESS TESTS-30",
+    "ASSIGNMENTS-30",
+    "EXERCISES-30",
+    "QUIZ-20",
+    "ASSIGNMENTS-20",
+    "PRACTICAL EXAM-30",
+    "PROGRESS TESTS-20",
+    "PROGRESS TESTS-10",
+    "QUIZ-10",
+    "LABS-15",
+    "PRACTICAL EXAM-25",
+    "PRESENTATION-20",
+    "ACTIVE LEARNING-10",
+    "PROJECT-30",
+    "EXERCISES-10",
+    "LABS-20",
+    "PRACTICAL EXAM-40",
+    "WORKSHOP-10",
+    "PRACTICAL EXAM-20"
+  ],
+  "excluded_leakage_features": [
+    "FINAL EXAM",
+    "FINAL EXAM-30",
+    "FINAL EXAM-40",
+    "TOTAL",
+    "STATUS",
+    "STATUS_CLEAN",
+    "TARGET"
+  ],
+  "split": "GroupShuffleSplit by (SOURCE_FILE, CODE)",
+  "split_group_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "split_sizes": {
+    "train": 66491,
+    "validation": 22236,
+    "test": 21977
+  },
+  "model_parameters": {
+    "Decision Tree": "DecisionTreeClassifier(class_weight='balanced', random_state=42)",
+    "Random Forest": "RandomForestClassifier(class_weight='balanced', n_estimators=300, n_jobs=-1,\n                       random_state=42)",
+    "XGBoost": "XGBClassifier(base_score=None, booster=None, callbacks=None,\n              colsample_bylevel=None, colsample_bynode=None,\n              colsample_bytree=0.8, device=None, early_stopping_rounds=None,\n              enable_categorical=True, eval_metric='logloss',\n              feature_types=None, feature_weights=None, gamma=None,\n              grow_policy=None, importance_type=None,\n              interaction_constraints=None, learning_rate=0.05, max_bin=None,\n              max_cat_threshold=None, max_cat_to_onehot=None,\n              max_delta_step=None, max_depth=6, max_leaves=None,\n              min_child_weight=None, missing=nan, monotone_constraints=None,\n              multi_strategy=None, n_estimators=300, n_jobs=-1,\n              num_parallel_tree=None, ...)",
+    "LightGBM": "LGBMClassifier(learning_rate=0.05, n_estimators=300, random_state=42,\n               verbosity=-1)",
+    "CatBoost": "CatBoostClassifier(depth=6, iterations=300, learning_rate=0.05, random_seed=42, verbose=False)"
+  },
+  "selected_model": "Random Forest",
+  "validation_f2_at_0_5": 0.8566475167420199,
+  "threshold_search": "0.05 to 0.95 inclusive, step 0.01 on validation",
+  "baseline_threshold": 0.39000000000000007,
+  "smote_threshold": 0.34,
+  "baseline_test_metrics": {
+    "threshold": 0.39000000000000007,
+    "accuracy": 0.8978932520362197,
+    "precision": 0.7721459024159166,
+    "recall": 0.8592514496573537,
+    "f1": 0.8133732534930139,
+    "f2": 0.8402928136921332,
+    "roc_auc": 0.9456097024084924,
+    "pr_auc": 0.9192235707642284,
+    "tn": 14843,
+    "fp": 1443,
+    "fn": 801,
+    "tp": 4890
+  },
+  "smote_test_metrics": {
+    "threshold": 0.34,
+    "accuracy": 0.9055831096145971,
+    "precision": 0.7949429037520391,
+    "recall": 0.8562642769284836,
+    "f1": 0.8244649352846629,
+    "f2": 0.8432546549456634,
+    "roc_auc": 0.9423147460803918,
+    "pr_auc": 0.9181089081540799,
+    "tn": 15029,
+    "fp": 1257,
+    "fn": 818,
+    "tp": 4873
+  },
+  "random_state": 42,
+  "imputation": "none for RQ2 and baseline (native NaN handling); median imputer fitted on train used ONLY in the SMOTE scenarios"
+}

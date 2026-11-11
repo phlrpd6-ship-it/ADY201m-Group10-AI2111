@@ -1,0 +1,12 @@
+{
+  "source_archive": "COMPILED_PIPELINE_TRAINING_CLEANING.zip",
+  "source_main": "ADY201m_NEW_RQ_PIPELINE_GROUPED.py",
+  "original_combined_sha256": "bf34a36b77f9b70647ea0cacc04c266cb119a2f3376c9683bebeffd578b2517b",
+  "edit_notes": [
+    "removed extra code and SHAP section",
+    "changed input/output paths",
+    "added optional quick-check mode",
+    "added RQ3 four-scenario ablation, plots and summary"
+  ],
+  "changes_to_data": "none"
+}

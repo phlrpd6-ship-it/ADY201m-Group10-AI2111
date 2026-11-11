@@ -24,3 +24,92 @@ function drawThreshold(){const b=D.baselineThresholds,s=D.smoteThresholds;let be
 drawThreshold();
 </script></body></html>
 
+<script>
+(() => {
+  const rq1Families = [
+    {rank:1, family:'PROJECT', files:2, pairs:2, validRows:5804, medianAbsR:0.766637},
+    {rank:2, family:'PRACTICAL EXAM', files:10, pairs:13, validRows:72027, medianAbsR:0.719285},
+    {rank:3, family:'PRESENTATION', files:3, pairs:3, validRows:19678, medianAbsR:0.689721},
+    {rank:4, family:'ACTIVE LEARNING', files:2, pairs:2, validRows:9159, medianAbsR:0.676714},
+    {rank:5, family:'LABS', files:6, pairs:7, validRows:44202, medianAbsR:0.651801},
+    {rank:6, family:'PROGRESS TESTS', files:12, pairs:12, validRows:67251, medianAbsR:0.641883},
+    {rank:7, family:'ASSIGNMENTS', files:12, pairs:15, validRows:76060, medianAbsR:0.639703},
+    {rank:8, family:'EXERCISES', files:2, pairs:2, validRows:19112, medianAbsR:0.631092},
+    {rank:9, family:'QUIZ', files:6, pairs:6, validRows:1218, medianAbsR:0.617440},
+    {rank:10, family:'WORKSHOP', files:1, pairs:1, validRows:12352, medianAbsR:0.532896}
+  ];
+  const escHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const fmtR = value => Number(value).toFixed(6);
+  const firstTitle = document.querySelectorAll('.title')[0];
+  const firstGrid = document.querySelectorAll('.grid.two')[0];
+  if (!firstTitle || !firstGrid) return;
+  firstTitle.innerHTML = '<span>RQ1</span><h2>Family đánh giá nào có liên hệ mạnh nhất với kết quả không đạt?</h2>';
+  firstGrid.innerHTML = `<section class="card"><h2>Median |r| theo family</h2><p class="desc">Tổng hợp theo family; median |r| càng cao cho thấy mối liên hệ tuyệt đối điển hình càng mạnh trong các cặp đánh giá.</p><div id="familyBars"></div><div class="callout" id="rq1Insight"></div></section><section class="card"><h2>Quy mô dữ liệu theo family</h2><p class="desc">Số file, số cặp và số dòng hợp lệ được dùng để tổng hợp median |r|.</p><div class="tablewrap"><table class="table"><thead><tr><th>Rank</th><th>Family</th><th>Files</th><th>Pairs</th><th>Valid rows</th><th>Median |r|</th></tr></thead><tbody id="familyTable"></tbody></table></div><div class="callout">PROJECT đứng đầu về median |r| (0.766637), trong khi ASSIGNMENTS có số dòng hợp lệ lớn nhất (76,060).</div></section>`;
+  document.getElementById('familyBars').innerHTML = rq1Families.map((item, index) => `<div class="barrow"><span>${item.rank}. ${escHtml(item.family)}</span><div class="track"><div class="fill ${index === 0 ? 'orange' : ''}" style="width:${item.medianAbsR / 0.8 * 100}%"></div></div><span class="value">${fmtR(item.medianAbsR)}</span></div>`).join('');
+  document.getElementById('familyTable').innerHTML = rq1Families.map(item => `<tr><td>${item.rank}</td><td>${escHtml(item.family)}</td><td>${item.files}</td><td>${item.pairs}</td><td>${item.validRows.toLocaleString('en-US')}</td><td>${fmtR(item.medianAbsR)}</td></tr>`).join('');
+  document.getElementById('rq1Insight').innerHTML = `<b>${escHtml(rq1Families[0].family)}</b> đứng đầu với median |r| = ${fmtR(rq1Families[0].medianAbsR)}. ${escHtml(rq1Families[6].family)} có độ phủ lớn nhất với ${rq1Families[6].validRows.toLocaleString('en-US')} valid rows, nhưng median |r| thấp hơn PROJECT.`;
+})();
+</script>
+<script>
+(() => {
+  const rq2Callouts = document.querySelectorAll('.grid.two')[1]?.querySelectorAll('.callout');
+  if (rq2Callouts?.[1]) rq2Callouts[1].textContent = 'Decision Tree có recall cao nhất (0.8375), còn LightGBM có F2 và PR-AUC cao nhất trong bảng.';
+})();
+</script>
+
+<script>
+(() => {
+  const rq2Models = [
+    {rank:1, model:'LightGBM', tp:4839, fp:273, fn:1031, precision:0.9466, recall:0.8244, f2:0.8462, prAuc:0.9444},
+    {rank:2, model:'Random Forest', tp:4902, fp:603, fn:968, precision:0.8905, recall:0.8351, f2:0.8456, prAuc:0.9286},
+    {rank:3, model:'XGBoost', tp:4818, fp:254, fn:1052, precision:0.9499, recall:0.8208, f2:0.8437, prAuc:0.9443},
+    {rank:4, model:'CatBoost', tp:4807, fp:236, fn:1063, precision:0.9532, recall:0.8189, f2:0.8427, prAuc:0.9432},
+    {rank:5, model:'Decision Tree', tp:4916, fp:1144, fn:954, precision:0.8112, recall:0.8375, f2:0.8321, prAuc:0.7794}
+  ];
+  const escHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const pct = value => `${(value * 100).toFixed(2)}%`;
+  const firstKpi = document.querySelectorAll('.kpis .card')[2];
+  const secondTitle = document.querySelectorAll('.title')[1];
+  const secondGrid = document.querySelectorAll('.grid.two')[1];
+  if (!firstKpi || !secondTitle || !secondGrid) return;
+  firstKpi.querySelector('.big').textContent = rq2Models[0].model;
+  firstKpi.querySelector('.small').textContent = `F2 = ${rq2Models[0].f2.toFixed(4)} theo bảng RQ2`;
+  secondTitle.innerHTML = '<span>RQ2</span><h2>So sánh hiệu quả của năm mô hình</h2>';
+  secondGrid.innerHTML = `<section class="card"><h2>F2 theo model</h2><p class="desc">Xếp hạng theo F2 trên cùng tập đánh giá. F2 cân bằng precision và recall với trọng số ưu tiên recall.</p><div id="rq2ModelBars"></div><div class="axis"><span>0.80</span><span>0.82</span><span>0.84</span><span>0.86</span></div><div class="callout"><b>LightGBM</b> đứng đầu với F2 = 0.8462 và PR-AUC = 0.9444.</div></section><section class="card"><h2>Confusion matrix và metrics</h2><p class="desc">Các chỉ số được cập nhật theo bảng RQ2 mới bạn cung cấp.</p><div class="tablewrap"><table class="table"><thead><tr><th>Rank</th><th>Model</th><th>TP</th><th>FP</th><th>FN</th><th>Precision</th><th>Recall</th><th>F2</th><th>PR-AUC</th></tr></thead><tbody id="rq2ModelTable"></tbody></table></div><div class="callout">Random Forest có recall cao nhất (0.8351), còn LightGBM có F2 và PR-AUC cao nhất trong bảng.</div></section>`;
+  document.getElementById('rq2ModelBars').innerHTML = rq2Models.map((item, index) => `<div class="barrow"><span>${item.rank}. ${escHtml(item.model)}</span><div class="track"><div class="fill ${index === 0 ? 'orange' : ''}" style="width:${Math.max(0, (item.f2 - 0.8) / 0.06 * 100)}%"></div></div><span class="value">${item.f2.toFixed(4)}</span></div>`).join('');
+  document.getElementById('rq2ModelTable').innerHTML = rq2Models.map(item => `<tr><td>${item.rank}</td><td>${escHtml(item.model)}</td><td>${item.tp.toLocaleString('en-US')}</td><td>${item.fp.toLocaleString('en-US')}</td><td>${item.fn.toLocaleString('en-US')}</td><td>${pct(item.precision)}</td><td>${pct(item.recall)}</td><td>${item.f2.toFixed(4)}</td><td>${item.prAuc.toFixed(4)}</td></tr>`).join('');
+})();
+</script>
+<script>window.addEventListener('load', () => { const rq2Callouts = document.querySelectorAll('.grid.two')[1]?.querySelectorAll('.callout'); if (rq2Callouts?.[1]) rq2Callouts[1].textContent = 'Decision Tree có recall cao nhất (0.8375), còn LightGBM có F2 và PR-AUC cao nhất trong bảng.'; });</script>
+<script>
+(() => {
+  const rq3Scenarios = [
+    {scenario:'Baseline @ 0.50', threshold:0.50, f2:0.8269, recall:0.8013, precision:0.9480, fp:250, fn:1131},
+    {scenario:'Baseline + F2 tuning', threshold:0.15, f2:0.8574, recall:0.8846, precision:0.7637, fp:1558, fn:657},
+    {scenario:'SMOTE @ 0.50', threshold:0.50, f2:0.8440, recall:0.8331, precision:0.8907, fp:582, fn:950},
+    {scenario:'SMOTE + F2 tuning', threshold:0.33, f2:0.8553, recall:0.8758, precision:0.7820, fp:1389, fn:707}
+  ];
+  const rq3Comparisons = [
+    {comparison:'SMOTE vs baseline, both at 0.50', deltaF2:0.0171, deltaRecall:0.0318},
+    {comparison:'Tuned SMOTE vs tuned baseline (the fair test)', deltaF2:-0.0021, deltaRecall:-0.0088},
+    {comparison:'Threshold tuning alone (baseline 0.50 → tuned)', deltaF2:0.0305, deltaRecall:0.0833},
+    {comparison:'Threshold tuning on top of SMOTE', deltaF2:0.0113, deltaRecall:0.0427},
+    {comparison:'Tuned SMOTE vs untuned baseline (the full combo)', deltaF2:0.0284, deltaRecall:0.0745}
+  ];
+  const escHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const f4 = value => Number(value).toFixed(4);
+  const signed = value => `${value >= 0 ? '+' : '−'}${f4(Math.abs(value))}`;
+  const rq3Title = document.querySelectorAll('.title')[2];
+  const rq3Grid = document.querySelectorAll('.grid.two')[2];
+  const rq3Kpi = document.querySelectorAll('.kpis .card')[3];
+  if (!rq3Title || !rq3Grid || !rq3Kpi) return;
+  rq3Kpi.querySelector('.label').textContent = 'RQ3: Δ F2 fair test';
+  rq3Kpi.querySelector('.big').textContent = '−0.0021';
+  rq3Kpi.querySelector('.small').textContent = 'Tuned SMOTE so với tuned baseline';
+  rq3Title.innerHTML = '<span>RQ3</span><h2>SMOTE và threshold tuning ảnh hưởng thế nào?</h2>';
+  rq3Grid.innerHTML = `<section class="card"><h2>So sánh bốn kịch bản</h2><p class="desc">Các giá trị được cập nhật theo bảng RQ3 mới; threshold được hiển thị cùng F2, recall và precision.</p><div class="tablewrap"><table class="table"><thead><tr><th>Scenario</th><th>Threshold</th><th>F2</th><th>Recall</th><th>Precision</th><th>FP</th><th>FN</th></tr></thead><tbody id="rq3ScenarioTable"></tbody></table></div><div class="callout">Tuned baseline có F2 cao nhất (0.8574); tuned SMOTE đạt 0.8553.</div></section><section class="card"><h2>Các phép so sánh</h2><p class="desc">Phép so sánh công bằng là tuned SMOTE với tuned baseline, vì cả hai đều đã được chọn threshold theo F2.</p><div class="tablewrap"><table class="table"><thead><tr><th>Comparison</th><th>ΔF2</th><th>ΔRecall</th></tr></thead><tbody id="rq3ComparisonTable"></tbody></table></div><div class="callout" id="rq3NewInsight"></div></section>`;
+  document.getElementById('rq3ScenarioTable').innerHTML = rq3Scenarios.map(item => `<tr><td>${escHtml(item.scenario)}</td><td>${f4(item.threshold)}</td><td>${f4(item.f2)}</td><td>${f4(item.recall)}</td><td>${f4(item.precision)}</td><td>${item.fp.toLocaleString('en-US')}</td><td>${item.fn.toLocaleString('en-US')}</td></tr>`).join('');
+  document.getElementById('rq3ComparisonTable').innerHTML = rq3Comparisons.map(item => `<tr><td>${escHtml(item.comparison)}</td><td>${signed(item.deltaF2)}</td><td>${signed(item.deltaRecall)}</td></tr>`).join('');
+  document.getElementById('rq3NewInsight').innerHTML = '<b>Kết luận fair test:</b> SMOTE không cải thiện khi cả baseline và SMOTE đều được tuning theo F2 (ΔF2 = −0.0021; ΔRecall = −0.0088). Phần cải thiện lớn hơn đến từ threshold tuning, không phải từ SMOTE riêng lẻ.';
+})();
+</script>
